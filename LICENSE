@@ -1,6 +1,18 @@
 BSD 2-Clause License
 
-Copyright (c) 2025, APES Suite
+Copyright (c) 2013-2017, Kannan Masilamani <kannan.masilamani@dlr.de>
+Copyright (c) 2015-2020, Peter Vitt <peter.vitt2@uni-siegen.de>
+Copyright (c) 2013-2025,  Harald Klimach <harald.klimach@dlr.de>
+Copyright (c) 2013, Nikhil Anand <nikhil.anand@uni-siegen.de>
+Copyright (c) 2018, Neda Ebrahimi Pour <neda.ebrahimipour@dlr.de>
+Copyright (c) 2020, Raphael Haupt <raphael.haupt@dlr.de>
+Copyright (c) 2015, Samuel Ziegenberg
+Copyright (c) 2016, Tobias Girresser
+Copyright (c) 2013, Manuel Hasert
+Copyright (c) 2015, Parid Ndreka
+Copyright (c) 2015, Jiaxing Qi
+Copyright (c) 2015, Langhammer Kay
+
 
 Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are met:

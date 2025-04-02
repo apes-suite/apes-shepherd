@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "apes-shepherd"
+description = "Helper tool to run APES tools parameterized."
+readme = "README.md"
+license = { text = "BSD-2-Clause" }
+version = "2025.4.2"
+dependencies = [ "numpy", "pyratemp" ]
+maintainers = [
+  { name = "Harald Klimach", email = "harald.klimach@dlr.de"}
+]
+
+[project.scripts]
+shepherd = "shepherd:run"
+
+[tool.setuptools]
+packages = ["shepherd", "shepherd.lib"]
