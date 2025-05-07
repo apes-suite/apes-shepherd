@@ -33,11 +33,13 @@ def check_difference(load_output,load_reference):
     print('L2 output:', l2_output)
     print('L2 ref_file:', l2_reference)
 
-    success = (diff < 0.00001)
+    success = (np.allclose(load_output, load_reference, rtol=1e-10, atol=1e-5))
     if math.isnan(diff):
         difference = 'NaN!'
     else:
         difference = '{0:.3%}'.format(diff)
+    if not success:
+        print(f'Maximal difference: {np.max(np.fabs(load_output - load_reference))}')
 
     print('Deviation: ', difference)
 
