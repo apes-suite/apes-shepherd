@@ -39,7 +39,13 @@ def check_difference(load_output,load_reference):
     else:
         difference = '{0:.3%}'.format(diff)
     if not success:
-        print(f'Maximal difference: {np.max(np.fabs(load_output - load_reference))}')
+        maxdiff = []
+        for col in range(len(load_reference)):
+            diff = []
+            for row in range(len(load_reference[col])):
+                diff.append(load_output[col][row] - load_reference[col][row])
+            maxdiff = np.max(np.fabs(diff))
+        print(f'Maximal difference: {np.max(maxdiff)}')
 
     print('Deviation: ', difference)
 
