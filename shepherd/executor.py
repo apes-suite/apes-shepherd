@@ -20,15 +20,19 @@ from shepherd.lib.performance import perfDB
 def process_input():
     # turn performance on/off
     if not 'grep_performance' in globals():
+        global grep_performance
         grep_performance = True
     
     if not 'run_label' in locals():
+        global run_label
         run_label = ''
     
     if not 'loris_clone_url' in globals():
+        global loris_clone_url
         loris_clone_url = None
     
     if not 'create_tag_on' in globals():
+        global create_tag_on
         create_tag_on = False
     
     ### changed for RECHECK 2 ######
